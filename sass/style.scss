@@ -138,22 +138,34 @@ p {
   height: 40px;
   border-radius: 50%;
   position: relative;
-}
 
-.list-inline li:first-child:hover {
-  background: #00aced;
-}
+  &:first-child {
 
-.list-inline li:nth-child(2):hover {
-  background: #3b5998;
-}
+    &:hover {
+      background: #00aced;
 
-.list-inline li:nth-child(3):hover {
-  background: #cb2028;
-}
+      &:nth-child(2) {
 
-.list-inline li:last-child:hover {
-  background: #da2713;
+        &:hover {
+          background: #3b5998;
+
+          &:nth-child(3) {
+
+            &:hover {
+              background: #cb2028;
+
+              &:last-child {
+
+                &:hover {
+                  background: #da2713;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 i {
