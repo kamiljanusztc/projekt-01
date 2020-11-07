@@ -10,87 +10,69 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-md fixed-top container">
-      <img src="images/Logo-Treehouse.png" alt="logo">
-      <button class="navbar-toggler navbar-light bg-light" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar" id="mobile-menu">
-        <ul class="navbar-nav">
-          <li>
-            <a class="nav-link px-2" href="#">Home</a>
-          </li>
-          <li>
-            <a class="nav-link px-2" href="#">Services</a>
-          </li>
-          <li>
-            <a class="nav-link px-2" href="#">Portfolio</a>
-          </li>
-          <li>
-            <a class="nav-link px-2" href="#">About</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="main container">
-      <img class="w-100" src="images/background-image.png" alt="Background image">
+    <header class="nav-layout">
+      <nav class="container main">
+        <img src="images/Logo-Treehouse.png" alt="logo">
+        <div class="nav-link">
+          <a href="">Home</a>
+          <a href="">Services</a>
+          <a href="">Portfolio</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+        </div>
+      </nav>
       <div class="title">
         <h2>Welcome To Our Studio!</h2>
         <h1>IT'S NICE TO MEET YOU</h1>
         <a class="btn btn-primary" href="#">TELL ME MORE</a>
       </div>
-    </div>
-    <div class=" py-5">
-      <div class="container">
-        <div class="skills py-5">
-          <h3>Services</h3>
-          <p>Proin iaculis purus consequat sem cure.</p>
+    </header>
+    <div class="container services">
+      <div class="skills">
+        <h3>Services</h3>
+        <p>Proin iaculis purus consequat sem cure.</p>
+      </div>
+      <div class="row">
+        <div class="container col-md-4">
+          <div class="column">
+            <img src="images/Icon-Basket.png" alt="icon">
+          </div>
+          <div class="column-text">
+            <h4>E-Commerce</h4>
+            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+          </div>
         </div>
-        <div class="row">
-          <div class="col-md-4 container-md pb-5">
-            <div class="p-3 mb-3">
-              <div class="icon d-flex justify-content-center pb-4">
-                <img src="images/Icon-Basket.png" alt="icon">
-              </div>
-              <h4>E-Commerce</h4>
-              <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-            </div>
+        <div class="container col-md-4">
+          <div class="column">
+            <img src="images/Icon-Laptop.png" alt="icon">
           </div>
-          <div class="col-md-4 container-md pb-5">
-            <div class="p-3 mb-3">
-              <div class="icon d-flex justify-content-center pb-4">
-                <img src="images/Icon-Laptop.png" alt="icon">
-              </div>
-              <h4>Responsive Web</h4>
-              <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-            </div>
+          <div class="column-text">
+            <h4>Responsive Web</h4>
+            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
           </div>
-          <div class="col-md-4 container-md pb-5">
-            <div class="p-3 mb-3">
-              <div class="icon d-flex justify-content-center pb-4">
-                <img src="images/Icon-Locked.png" alt="icon">
-              </div>
-              <h4>Web Security</h4>
-              <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-            </div>
+        </div>
+        <div class="container col-md-4">
+          <div class="column">
+            <img src="images/Icon-Locked.png" alt="icon">
           </div>
+          <div class="column-text">
+            <h4>Web Security</h4>
+            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+        </div>
         </div>
       </div>
     </div>
-    <div class=" py-5 address">
-      <div class="container pb-5">
-        <div class="skills py-5">
+    <div class="skills-layout">
+      <div class="container">
+        <div class="skills">
           <h3>Our portfolio</h3>
           <p>Proin iaculis purus consequat sem cure.</p>
         </div>
         <div class="row">
-          <div class="col-md-4 container-md pb-5">
+          <div class="col-md-4 container-md">
             <div class="card">
               <img src="images/Image.png" alt="product photo">
-              <div class="offer p-3 mb-3">
+              <div class="offer">
                 <h4>Ebony & Ivory</h4>
                 <p>Branding</p>
               </div>
@@ -99,7 +81,7 @@
           <div class="col-md-4 container-md">
             <div class="card">
               <img src="images/Image-3.png">
-              <div class="offer p-3 mb-3">
+              <div class="offer">
                 <h4>Smart Stationary</h4>
                 <p>Print Design</p>
               </div>
@@ -108,7 +90,7 @@
           <div class="col-md-4 container-md">
             <div class="card">
               <img src="images/Image-1.png">
-              <div class="p-3 mb-3">
+              <div class="offer">
                 <h4>Clever Poster</h4>
                 <p>Print Design</p>
               </div>
@@ -117,7 +99,7 @@
           <div class="col-md-4 container-md">
             <div class="card">
               <img src="images/Image-2.png">
-              <div class="offer p-3 mb-3">
+              <div class="offer">
                 <h4>Vinyl Record</h4>
                 <p>Product Mock-Up</p>
               </div>
@@ -126,7 +108,7 @@
           <div class="col-md-4 container-md">
             <div class="card">
               <img src="images/Image-5.png">
-              <div class="offer p-3 mb-3">
+              <div class="offer">
                 <h4>Treehouse Template</h4>
                 <p>Web Design</p>
               </div>
@@ -135,7 +117,7 @@
           <div class="col-md-4 container-md">
             <div class="card">
               <img src="images/Image-4.png">
-              <div class="offer p-3 mb-3">
+              <div class="offer">
                 <h4>Burned Logo</h4>
                 <p>Branding</p>
               </div>
@@ -144,19 +126,17 @@
         </div>
       </div>
     </div>
-    <div class="container pt-5 pb-4">
-      <div class="row d-flex align-items-center">
-        <div class="col-md-4 justify-content-left">
+    <div class="container footer">
+      <div class="row">
+        <div class="copyright">
           <p>© Copyright 2014 FreebiesXpress.com</p>
         </div>
-        <div class="col-md-4 d-flex justify-content-center">
-          <ul class="list-inline">
-            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li class="list-inline-item"><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-            <li class="list-inline-item"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-          </ul>
-        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+        </ul>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
