@@ -60,6 +60,7 @@ body {
       border: none;
       color: #fff;
       text-decoration: none;
+      white-space: nowrap;
 
       &:hover {
         background: white;
@@ -250,10 +251,6 @@ p {
   h2 {
     font-size: 30px;
     padding-bottom: 30px;
-  }
-
-  .btn {
-    white-space: nowrap;
   }
 
   .footer {

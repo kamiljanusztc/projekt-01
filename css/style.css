@@ -54,6 +54,7 @@ body {
   border: none;
   color: #fff;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .nav-layout .title .btn:hover {
@@ -225,9 +226,6 @@ p {
   h2 {
     font-size: 30px;
     padding-bottom: 30px;
-  }
-  .btn {
-    white-space: nowrap;
   }
   .footer {
     padding-top: 90px;
