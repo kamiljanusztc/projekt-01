@@ -5,6 +5,112 @@ body {
   font-size: 16px;
 }
 
+/* Header */
+.header {
+  background: none;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header .navigation {
+  padding-top: 50px;
+}
+
+.header .navigation img {
+  float: left;
+  padding: 20px 40px;
+}
+
+.header .navigation .menu-btn {
+  display: none;
+}
+
+.header .navigation .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .navigation .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .navigation .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .navigation .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .navigation .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, .header .navigation .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 40px 40px;
+  position: relative;
+}
+
+.header .menu-icon .navicon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+  top: -5px;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background: none;
+}
+
+.header ul a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.header ul a:hover {
+  color: #fed136;
+}
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
 /* Navbar */
 .nav-layout {
   height: 100vh;
@@ -16,7 +122,7 @@ body {
 }
 
 .nav-layout .main {
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 .nav-layout .main a {
@@ -221,7 +327,33 @@ p {
 }
 
 /* Media */
-@media (max-width: 767px) {
+@media (min-width: 768px) {
+  .header .menu-icon {
+    display: none;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu li {
+    float: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    background: #000;
+  }
+  .main img {
+    padding-left: 40px;
+  }
+  .main .nav-link {
+    padding: 20px 0 0 30px;
+  }
+  .main .nav-link a {
+    line-height: 2.6;
+  }
   .title {
     widht: 50%;
     height: auto;
